@@ -1,0 +1,36 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+Artifacts/
+Builds/
+**/bin/
+**/obj/
+.vs/
+.idea/
+.utmp/
+*.csproj.user
+*.sln
+*.slnx
+/Assembly-CSharp*.csproj
+/DoorDemo.*.csproj
+/Assets/StreamingAssets/BleBridge/
+/Assets/StreamingAssets/BleBridge.meta
+/Assets/InitTestScene*.unity
+/Assets/InitTestScene*.unity.meta
+*.log
+# Generated Android plugin; rebuild it from Native/AndroidBle after cloning.
+/Assets/Plugins/Android/*.aar
+/Assets/Plugins/Android/*.aar.meta
+# Local signing and account configuration never belong in the source repository.
+*.keystore
+*.jks
+*.p12
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+# Personal interview preparation stays local.
+/docs/INTERVIEW.md

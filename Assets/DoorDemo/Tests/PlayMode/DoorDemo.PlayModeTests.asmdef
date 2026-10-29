@@ -1,0 +1,5 @@
+{
+  "name": "DoorDemo.PlayModeTests",
+  "references": ["DoorDemo.Core", "DoorDemo.Infrastructure", "DoorDemo.Presentation"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

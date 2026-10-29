@@ -1,0 +1,6 @@
+{
+  "name": "DoorDemo.Editor",
+  "rootNamespace": "DoorDemo.Editor",
+  "references": ["DoorDemo.Core", "DoorDemo.Presentation"],
+  "includePlatforms": ["Editor"]
+}

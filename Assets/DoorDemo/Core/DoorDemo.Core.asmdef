@@ -1,0 +1,5 @@
+{
+  "name": "DoorDemo.Core",
+  "rootNamespace": "DoorDemo",
+  "noEngineReferences": true
+}

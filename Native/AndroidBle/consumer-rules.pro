@@ -1,0 +1,1 @@
+-keep class com.portfolio.connectedroom.AndroidBleBridge { public *; }

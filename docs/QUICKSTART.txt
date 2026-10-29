@@ -1,0 +1,35 @@
+CONNECTED ROOM - DEMO BLE BIDIRECCIONAL
+
+Contenido del paquete
+  Android/ConnectedRoom.apk
+  Windows/ConnectedRoom.Windows.exe y sus archivos de soporte
+
+1. Extraer TODO el ZIP en la PC.
+2. Encender Bluetooth en Windows y Android.
+3. Ejecutar Windows/ConnectedRoom.Windows.exe y pulsar Iniciar BLE.
+4. Instalar Android/ConnectedRoom.apk en un Android ARM64 (Android 8 o posterior).
+5. Abrir Connected Room y pulsar Conectar. Conceder los permisos que solicite Android.
+6. En Windows pulsar Abrir movil: SOLO se abre la puerta Android; la de Windows no cambia.
+7. En Android pulsar Abre Windows: SOLO se abre la puerta de la PC; la del movil no cambia.
+8. Probar Cerrar desde ambos lados: siempre afecta a la puerta del receptor.
+
+Windows actua como servidor GATT/periferico; Android como cliente/central.
+La comunicacion entre las aplicaciones es Bluetooth Low Energy real. No utiliza Wi-Fi ni Internet.
+El adaptador Bluetooth de Windows debe admitir modo periferico BLE. Si no lo admite,
+la aplicacion mostrara el error: disponer de Bluetooth no garantiza ese rol.
+
+La app Windows incluye su runtime y no requiere instalar .NET.
+Mantener todos sus archivos juntos. No ejecutar el cliente de consola antiguo al mismo tiempo.
+
+En Android 8-11 tambien se requiere Ubicacion activa para escanear BLE.
+Si se cambia de app o se pierde la conexion, volver y pulsar Conectar.
+Hay dos estados independientes, uno para cada destinatario. Windows deja una orden para
+Android que el movil recibe por lectura. Android escribe una orden para Windows y recibe
+una confirmacion GATT. Esa confirmacion no cambia la puerta del emisor.
+
+El panel Windows muestra lecturas y escrituras reales recibidas. Abrir en Windows cambia
+la orden que lee Android. Abrir en Android escribe en el estado local de Windows.
+
+Es un prototipo independiente de portfolio, sin autenticacion, cifrado exigido ni persistencia.
+No controla un acceso fisico ni mide ocupacion. APK de pruebas, sin publicacion en tienda.
+No se distribuye una version iOS. No enviar este prototipo como evidencia de una app ya publicada.

@@ -1,0 +1,5 @@
+{
+  "name": "DoorDemo.Infrastructure",
+  "rootNamespace": "DoorDemo.Infrastructure",
+  "references": ["DoorDemo.Core"]
+}

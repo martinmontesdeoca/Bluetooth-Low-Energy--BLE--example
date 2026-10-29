@@ -1,0 +1,6 @@
+{
+  "name": "DoorDemo.EditModeTests",
+  "references": ["DoorDemo.Core", "DoorDemo.Infrastructure"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}
